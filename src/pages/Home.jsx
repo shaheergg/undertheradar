@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <div className="font-orbitron md:px-0 px-4 relative h-[100vh] dj-bg">
+      <div className="font-orbitron md:px-0 px-4 relative py-10 flex items-center justify-center min-h-[100vh] dj-bg">
         <div className="flex flex-col justify-center h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
             <h2 className="text-[70px] leading-[70.7px] text-white">About</h2>
