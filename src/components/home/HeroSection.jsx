@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav";
 import CrossSVG from "../../assets/svgs/cross.svg";
 const HeroSection = () => {
   return (
-    <div className="relative min-h-[120vh] hero-bg">
+    <div id="events" className="relative min-h-[120vh] hero-bg">
       <div className="absolute top-0 left-0">
         <img className="animate-pulse" src={StarSVG} alt="" />
       </div>
