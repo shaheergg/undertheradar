@@ -37,8 +37,8 @@ const HeroSection = () => {
               />
             </svg>
             <div className="flex items-start">
-              <button
-                href="/"
+              <a
+                href="#about"
                 className="p-4 bg-transparent border-2 rounded hover:text-black text-green hover:bg-green border-green"
               >
                 <svg
@@ -56,7 +56,7 @@ const HeroSection = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
