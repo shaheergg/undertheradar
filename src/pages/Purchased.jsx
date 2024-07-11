@@ -1,6 +1,9 @@
 import React from "react";
 import StarSVG from "../assets/svgs/star.svg";
-
+import QrCode from "../assets/qrcode.png";
+import Drink from "../assets/drink.png";
+import Hiphop from "../assets/hiphop.png";
+import { Link } from "react-router-dom";
 const Purchased = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[100vh] checkout-bg">
@@ -31,6 +34,95 @@ const Purchased = () => {
           />
         </svg>
       </div>
+      <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-20 md:px-0">
+        <div className="font-semibold">
+          <h2 className="text-[70px] leading-[70.7px] text-white">
+            THANK YOU FOR
+          </h2>
+          <h3 className="text-[70px]  leading-[70.7px] text-green">
+            YOUR PURCHASE.
+          </h3>
+        </div>
+        <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
+          <div className="flex flex-col items-center justify-center col-span-3 gap-8 p-4 md:col-span-2">
+            <h2 className="text-[43px] text-white font-semibold">
+              TICKET INFO:
+            </h2>
+            <img
+              src={QrCode}
+              alt="qr-code"
+              className="w-auto h-auto bg-white"
+            />
+            <span className="text-[21px] text-accent font-semibold">
+              SCAN CODE
+            </span>
+          </div>
+          <div className="col-span-3 border-2 rounded-3xl border-green bg-black/50 md:col-span-4">
+            <div className="grid w-full h-full grid-cols-1 md:grid-cols-2">
+              <div className="w-full h-full col-span-1 p-8 space-y-8 border-r-2 border-dashed border-green">
+                <div>
+                  <h2 className="text-[27px] text-white font-semibold">
+                    TICKET HOLDER:{" "}
+                  </h2>
+                  <span className="text-[27px] font-semibold text-green">
+                    DYLAN SUARIS
+                  </span>
+                </div>
+                <div>
+                  <h2 className="text-[27px] font-semibold text-white">
+                    TOTAL TICKETS:{" "}
+                    <span className="underline text-green">3</span>
+                  </h2>
+                </div>
+                <div>
+                  <h2 className="text-[27px] font-semibold text-white">
+                    TOTAL DRINKS:{" "}
+                  </h2>
+                  <div className="flex items-center gap-2 pt-4">
+                    <div className="flex flex-col items-center justify-center gap-2 p-3 bg-black border-2 rounded-3xl border-green">
+                      <img src={Drink} alt="" />
+                      <span className="text-center text-green">BEER X3</span>
+                    </div>
+                    <div className="flex flex-col items-center justify-center gap-2 p-3 bg-black border-2 rounded-3xl border-green">
+                      <img src={Drink} alt="" />
+                      <span className="text-center text-green">BEER X3</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Link className="font-semibold underline text-accent" to="/">
+                    SEE ALL THE DRINKS
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="inline ml-2 size-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center justify-center w-full h-full col-span-1 p-8">
+                <div>
+                  <h2 className="text-[25px] font-semibold text-white">
+                    GENRE
+                  </h2>
+                  <img src={Hiphop} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
