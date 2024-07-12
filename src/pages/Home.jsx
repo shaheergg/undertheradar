@@ -108,7 +108,13 @@ const Home = () => {
               {[afro, hiphop, edm].map((item) => {
                 return (
                   <Link
-                    to="/"
+                    to={`${
+                      item === afro
+                        ? "/afro"
+                        : item === hiphop
+                        ? "/hiphop"
+                        : "/edm"
+                    }`}
                     className="transition-all border-2 border-transparent rounded-2xl hover:border-green ring-transparent ring-2 hover:ring-accent"
                   >
                     <img className="h-[343px] w-[343px]" src={item} alt="" />
