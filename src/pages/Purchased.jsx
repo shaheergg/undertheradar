@@ -36,16 +36,16 @@ const Purchased = () => {
       </div>
       <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-20 md:px-0">
         <div className="font-semibold">
-          <h2 className="text-[70px] leading-[70.7px] text-white">
+          <h2 className="text-[40px] text-center md:text-left py-10 md:py-0 md:text-[70px] md:leading-[70.7px] text-white">
             THANK YOU FOR
           </h2>
-          <h3 className="text-[70px]  leading-[70.7px] text-green">
+          <h3 className="text-[50px] md:text-[70px] text-center md:text-left  leading-[70.7px] text-green">
             YOUR PURCHASE.
           </h3>
         </div>
         <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
           <div className="flex flex-col items-center justify-center col-span-3 gap-8 p-4 md:col-span-2">
-            <h2 className="text-[43px] text-white font-semibold">
+            <h2 className="text-[43px] text-center md:text-left text-white font-semibold">
               TICKET INFO:
             </h2>
             <img
@@ -80,11 +80,11 @@ const Purchased = () => {
                   </h2>
                   <div className="flex items-center gap-2 pt-4">
                     <div className="flex flex-col items-center justify-center gap-2 p-3 bg-black border-2 rounded-3xl border-green">
-                      <img src={Drink} alt="" />
+                      <img className="animate-bounce" src={Drink} alt="" />
                       <span className="text-center text-green">BEER X3</span>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2 p-3 bg-black border-2 rounded-3xl border-green">
-                      <img src={Drink} alt="" />
+                      <img className="animate-bounce" src={Drink} alt="" />
                       <span className="text-center text-green">BEER X3</span>
                     </div>
                   </div>
@@ -116,7 +116,11 @@ const Purchased = () => {
                   <h2 className="text-[25px] font-semibold text-white">
                     GENRE
                   </h2>
-                  <img src={Hiphop} alt="" />
+                  <img
+                    className="transition-all hover:skew-x-12"
+                    src={Hiphop}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

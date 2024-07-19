@@ -16,8 +16,10 @@ const Home = () => {
       >
         <div className="flex flex-col justify-center h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[70px] leading-[70.7px] text-white">About</h2>
-            <h3 className="text-[70px]  leading-[70.7px] text-green">
+            <h2 className="text-[50px] md:text-[70px]leading-[70.7px] text-white">
+              About
+            </h2>
+            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-green">
               UNDER THE RADAR
             </h3>
           </div>
@@ -98,8 +100,10 @@ const Home = () => {
       <div className="font-orbitron md:px-0 z-50 px-4 relative py-10 flex items-center justify-center min-h-[100vh] bg-3">
         <div className="flex flex-col justify-center w-full h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[70px] leading-[70.7px] text-white">Events</h2>
-            <h3 className="text-[70px]  leading-[70.7px] text-green">
+            <h2 className="text-[50px] md:text-[70px] leading-[70.7px] text-white">
+              Events
+            </h2>
+            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-green">
               UNDER THE RADAR
             </h3>
           </div>
@@ -124,10 +128,12 @@ const Home = () => {
             </div>
             <div className="grid-cols-1 space-y-5">
               <div className="h-64"></div>
-              <div className="flex flex-col items-center p-12 font-semibold border-2 rounded-md border-accent ring-2 ring-green">
+              <div className="flex flex-col items-center p-8 font-semibold border-2 rounded-md border-accent ring-2 ring-green">
                 <img className="-mt-80" src={ticket} alt="" />
                 <div>
-                  <h2 className="text-[40px] text-green">TICKETS ONLY</h2>
+                  <h2 className="text-[40px] font-bold text-green">
+                    TICKETS ONLY
+                  </h2>
                   <p className="text-white text-[30px]">
                     AED <span className="text-[100px] text-accent">25</span>
                   </p>
@@ -146,7 +152,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="absolute z-10 -bottom-20 left-5">
+        <div className="absolute z-10 hidden md:block -bottom-20 left-5">
           <svg
             width="200"
             height="200"
@@ -223,10 +229,12 @@ const Home = () => {
         id="contact-us"
         className="font-orbitron md:px-0 px-4 z-40 relative py-10 flex items-center justify-center min-h-[100vh] bg-4"
       >
-        <div className="flex flex-col justify-center w-full h-full max-w-6xl gap-10 mx-auto">
+        <div className="z-50 flex flex-col justify-center w-full h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[70px] leading-[70.7px] text-white">Contact</h2>
-            <h3 className="text-[70px]  leading-[70.7px] text-accent">
+            <h2 className="text-[50px] md:text-[70px] leading-[70.7px] text-white">
+              Contact
+            </h2>
+            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-accent">
               UNDER THE RADAR
             </h3>
           </div>
@@ -273,7 +281,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="flex items-center justify-end w-full">
-                  <button className="p-2 rounded hover:ring-2 ring-green bg-accent">
+                  <button className="p-2 transition-all rounded hover:scale-105 hover:ring-2 ring-green bg-accent">
                     <svg
                       width="21"
                       height="21"

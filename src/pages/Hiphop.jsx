@@ -55,7 +55,7 @@ const HipHop = () => {
     <div>
       <div className="relative min-h-[100vh] hiphop-bg">
         <div className="absolute top-0 left-0 z-50">
-          <img className="" src={StarSVG} alt="" />
+          <img className="animate-pulse" src={StarSVG} alt="" />
         </div>
         <div className="z-50 flex items-center justify-end p-4">
           <div className="z-50 flex flex-col items-center space-y-2">
@@ -88,7 +88,7 @@ const HipHop = () => {
         </div>
         <div className="z-50 flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50">
-            <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[70px] font-orbitron">
+            <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
               UNDER THE <span className="text-[#FF7A00]">RADAR</span>
               <span className="block text-right text-[#FF7A00]">HIP HOP</span>
             </h2>
@@ -99,6 +99,7 @@ const HipHop = () => {
                   height="168"
                   viewBox="0 0 17 168"
                   fill="none"
+                  className="animate-bounce"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -136,10 +137,10 @@ const HipHop = () => {
       </div>
 
       <div className="relative min-h-[100vh] z-50 hiphop-bg-1">
-        <div className="absolute z-50 -top-56 right-5">
+        <div className="absolute z-50 hidden md:block -top-56 right-5">
           <img src={Balls} alt="" />
         </div>
-        <div className="absolute z-50 -bottom-20 left-6">
+        <div className="absolute z-50 hidden md:block -bottom-20 left-6">
           <svg
             width="180"
             height="221"
@@ -174,8 +175,8 @@ const HipHop = () => {
         </div>
         <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50 w-full space-y-4">
-            <h2 className="font-orbitron text-[#FF7A00] text-[55px] font-semibold max-w-3xl">
-              PICK YOUR PREFERED ARTISTS
+            <h2 className="font-orbitron text-[#FF7A00] text-[40px] md:text-[55px] font-semibold max-w-3xl">
+              PICK YOUR PREFERRED ARTISTS
             </h2>
             <div className="px-6 py-6 h-[90vh] flex justify-between flex-wrap gap-6 overflow-y-scroll bg-[#000000A1] rounded-xl w-full">
               {artists.map((artist) => {
@@ -194,7 +195,7 @@ const HipHop = () => {
       </div>
 
       <div className="relative min-h-[100vh] hiphop-bg-2">
-        <div className="absolute z-[1000] -top-20 right-5">
+        <div className="absolute md:block hidden z-[1000] -top-20 right-5">
           <svg
             width="179"
             height="181"
@@ -214,7 +215,7 @@ const HipHop = () => {
         </div>{" "}
         <div className="flex flex-col z-[1000] flex-wrap items-center justify-center max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="bg-[black]/30 z-50 py-12 px-6 w-full rounded-xl">
-            <h2 className="text-[86px] text-[#FF7A00] font-semibold font-orbitron">
+            <h2 className="text-[50px] md:text-[70px] text-[#FF7A00] font-semibold font-orbitron">
               PRE ORDER DRINKS
             </h2>
             <div className="px-4 py-6 bg-[#000000D1] rounded-xl h-[100vh] overflow-y-scroll">
@@ -236,7 +237,7 @@ const HipHop = () => {
       <div className="relative min-h-[100vh] bg-5">
         <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50 w-full pt-20 space-y-4">
-            <h2 className="font-semibold text-white uppercase font-orbitron text-[62px]">
+            <h2 className="font-semibold text-white uppercase font-orbitron text-[45px] md:text-[62px]">
               Book your ticket
             </h2>
             <div className="flex items-center">

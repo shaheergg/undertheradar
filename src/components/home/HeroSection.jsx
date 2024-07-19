@@ -16,11 +16,9 @@ const HeroSection = () => {
       <MobileNav />
       <div className="flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
         <div>
-          <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[70px] font-orbitron">
-            UNDER THE <span className="text-accent animate-pulse">RADAR</span>
-            <span className="block animate-pulse text-[30px] pl-36 text-[#FFFFFF5C]">
-              Events
-            </span>
+          <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
+            UNDER THE <span className="text-accent">RADAR</span>
+            <span className="text-[30px] pl-36 block pb-4">Events</span>
           </h2>
           <div className="flex flex-col items-center justify-center gap-4 p-2 md:items-start">
             <svg

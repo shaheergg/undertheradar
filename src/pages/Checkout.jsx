@@ -7,7 +7,7 @@ const Checkout = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[100vh] checkout-bg">
       <div className="absolute top-0 left-0 hidden md:block">
-        <img src={StarSVG} alt="" />
+        <img className="animate-pulse" src={StarSVG} alt="" />
       </div>
       <div className="absolute top-5 -right-12">
         <svg
@@ -35,7 +35,7 @@ const Checkout = () => {
       </div>
       <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-4 md:px-0">
         <div className="w-full py-3">
-          <h2 className="md:text-[70px] font-semibold text-[50px] text-green">
+          <h2 className="text-[40px] md:text-[70px] font-semibold text-green">
             CHECKOUT
           </h2>
         </div>
@@ -51,7 +51,7 @@ const Checkout = () => {
               <img className="w-28 h-28" src={mastercardSVG} alt="" />
             </div>
           </div>
-          <div className="px-12 py-2">
+          <div className="px-6 py-2 ">
             <form className="space-y-6">
               <div className="flex flex-wrap items-center gap-12">
                 <label

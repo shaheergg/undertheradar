@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[120vh] bg-4">
       <div className="z-50 w-full max-w-6xl mx-auto">
-        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-[70px] font-orbitron">
+        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-center md:text-left md:text-[70px] text-[50px] font-orbitron">
           SIGN IN/ SIGN UP <br />
           <span className="text-accent">UNDER THE RADAR</span>
         </h2>
@@ -40,7 +40,7 @@ const Login = () => {
                 />
               </div>
               <div className="flex items-center justify-center w-full py-10">
-                <button className="flex items-center gap-4 px-10 py-2 bg-black rounded-lg">
+                <button className="flex items-center justify-center w-full gap-4 px-10 py-2 text-center bg-black rounded-lg md:w-auto">
                   <span className="font-semibold text-white">SIGN IN</span>
                   <div className="p-2 rounded hover:ring-2 ring-green bg-accent">
                     <svg
@@ -73,7 +73,7 @@ const Login = () => {
             >
               SIGN UP
             </Link>
-            <p className="text-[20px] text-white max-w-[170px] font-semibold">
+            <p className="text-[20px] text-center md:text-left text-white max-w-[170px] font-semibold">
               Don’t have an account?
             </p>
           </div>
