@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[120vh] bg-4">
       <div className="z-50 w-full max-w-6xl mx-auto">
-        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-center md:text-left md:text-[70px] text-[50px] font-orbitron">
+        <h2 className="leading-[70.7px] text-white font-semibold flex-1 md:text-[70px] text-[50px] font-orbitron">
           SIGN IN/ SIGN UP <br />
           <span className="text-accent">UNDER THE RADAR</span>
         </h2>

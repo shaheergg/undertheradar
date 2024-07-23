@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[120vh] bg-4">
       <div className="z-50 w-full max-w-6xl mx-auto">
-        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-[70px] font-orbitron">
+        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
           SIGN UP <br />
           <span className="text-accent">UNDER THE RADAR</span>
         </h2>
