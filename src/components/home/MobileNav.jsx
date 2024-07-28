@@ -22,7 +22,7 @@ export default function MobileNav() {
   return (
     <nav className="relative flex items-center justify-end max-w-5xl px-8 py-16 mx-auto font-semibold text-white uppercase group md:hidden md:flex">
       <div className="flex items-center gap-4">
-        <div className="text-[20px] font-orbitron">
+        <div className="tmd:ext-[20px] text-[18px] font-orbitron">
           <a href="/login" className="hover:underline">
             Sign in
           </a>

@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[120vh] bg-4">
       <div className="z-50 w-full max-w-6xl mx-auto">
-        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
+        <h2 className="leading-[70.7px] text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
           SIGN UP <br />
           <span className="text-accent">UNDER THE RADAR</span>
         </h2>
@@ -96,7 +96,7 @@ const Register = () => {
           </div>
           <div className="col-span-5 border-2 rounded-md border-green">
             <div className="p-6 space-y-4 text-white">
-              <h2 className="text-[30px] font-semibold">
+              <h2 className="text-[20px] md:text-[30px] font-semibold">
                 Choose or Upload Avatar
               </h2>
               <div className="h-48 p-4 bg-black border border-green rounded-2xl"></div>

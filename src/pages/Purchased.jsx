@@ -36,16 +36,16 @@ const Purchased = () => {
       </div>
       <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-20 md:px-0">
         <div className="font-semibold">
-          <h2 className="text-[40px] text-center md:text-left py-10 md:py-0 md:text-[70px] md:leading-[70.7px] text-white">
+          <h2 className="text-[30px] text-center md:text-left py-10 md:py-0 md:text-[70px] md:leading-[70.7px] text-white">
             THANK YOU FOR
           </h2>
-          <h3 className="text-[50px] md:text-[70px] text-center md:text-left  leading-[70.7px] text-green">
+          <h3 className="text-[30px] md:text-[70px] text-center md:text-left  leading-[70.7px] text-green">
             YOUR PURCHASE.
           </h3>
         </div>
         <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
           <div className="flex flex-col items-center justify-center col-span-3 gap-8 p-4 md:col-span-2">
-            <h2 className="text-[43px] text-center md:text-left text-white font-semibold">
+            <h2 className="text-[35px] text-center md:text-left text-white font-semibold">
               TICKET INFO:
             </h2>
             <img
@@ -61,21 +61,21 @@ const Purchased = () => {
             <div className="grid w-full h-full grid-cols-1 md:grid-cols-2">
               <div className="w-full h-full col-span-1 p-8 space-y-8 border-r-2 border-dashed border-green">
                 <div>
-                  <h2 className="text-[27px] text-white font-semibold">
+                  <h2 className="text-[20px] md:text-[27px] text-white font-semibold">
                     TICKET HOLDER:{" "}
                   </h2>
-                  <span className="text-[27px] font-semibold text-green">
+                  <span className="text-[20px] md:text-[27px] font-semibold text-green">
                     DYLAN SUARIS
                   </span>
                 </div>
                 <div>
-                  <h2 className="text-[27px] font-semibold text-white">
+                  <h2 className="text-[20px] md:text-[27px] font-semibold text-white">
                     TOTAL TICKETS:{" "}
                     <span className="underline text-green">3</span>
                   </h2>
                 </div>
                 <div>
-                  <h2 className="text-[27px] font-semibold text-white">
+                  <h2 className="text-[20px] md:text-[27px] font-semibold text-white">
                     TOTAL DRINKS:{" "}
                   </h2>
                   <div className="flex items-center gap-2 pt-4">
@@ -113,11 +113,11 @@ const Purchased = () => {
               </div>
               <div className="flex items-center justify-center w-full h-full col-span-1 p-8">
                 <div>
-                  <h2 className="text-[25px] font-semibold text-white">
+                  <h2 className="text-[18px] md:text-[25px] font-semibold text-white">
                     GENRE
                   </h2>
                   <img
-                    className="transition-all hover:skew-x-12"
+                    className="transition-all h-[250px] md:h-auto hover:skew-x-12"
                     src={Hiphop}
                     alt=""
                   />

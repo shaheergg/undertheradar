@@ -16,7 +16,7 @@ const HeroSection = () => {
       <MobileNav />
       <div className="flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
         <div>
-          <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
+          <h2 className="max-w-sm md:leading-[70.7px] text-center md:text-left text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
             UNDER THE <span className="text-accent">RADAR</span>
             <span className="text-[30px] pl-36 block pb-4">Events</span>
           </h2>

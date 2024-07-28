@@ -88,7 +88,7 @@ const EDM = () => {
         </div>
         <div className="z-50 flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50">
-            <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[50px] md:text-[70px] font-orbitron">
+            <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
               UNDER THE <span className="text-[#FF0000]">RADAR</span>
               <span className="block text-right text-[#FF0000]">EDM</span>
             </h2>
@@ -188,7 +188,7 @@ const EDM = () => {
         </div>
         <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50 w-full space-y-4">
-            <h2 className="font-orbitron text-[#FF0000] text-[40px] md:text-[55px] font-semibold max-w-3xl">
+            <h2 className="font-orbitron text-[#FF0000] text-[30px] md:text-[55px] font-bold max-w-3xl">
               PICK YOUR PREFERED ARTISTS
             </h2>
             <div className="px-6 py-6 h-[90vh] flex justify-between flex-wrap gap-6 overflow-y-scroll bg-[#00000099] rounded-xl w-full">
@@ -266,13 +266,17 @@ const EDM = () => {
         </div>{" "}
         <div className="flex flex-col z-[1000] flex-wrap items-center justify-center max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="bg-[black]/30 z-50 py-12 px-6 w-full rounded-xl">
-            <h2 className="text-[50px] md:text-[70px] text-[#FF0000] font-semibold font-orbitron">
+            <h2 className="text-[30px] md:text-[70px] text-[#FF0000] font-semibold font-orbitron">
               PRE ORDER DRINKS
             </h2>
             <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[100vh] overflow-y-scroll">
               <div className="flex flex-wrap items-center justify-between">
                 <div className="flex flex-col items-center gap-4 text-center border rounded-2xl border-green">
-                  <img className="w-auto " src={Drink} alt="" />
+                  <img
+                    className="w-auto h-[200px] md:h-auto"
+                    src={Drink}
+                    alt=""
+                  />
                   <h2 className="font-orbitron font-semibold text-[#FF0000] text-[30px]">
                     BEER
                   </h2>
@@ -288,7 +292,7 @@ const EDM = () => {
       <div className="relative min-h-[100vh] bg-5">
         <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
           <div className="z-50 w-full pt-20 space-y-4">
-            <h2 className="font-semibold text-white uppercase font-orbitron text-[62px]">
+            <h2 className="font-semibold text-white uppercase font-orbitron text-[30px] md:text-[62px]">
               Book your ticket
             </h2>
             <div className="flex items-center">
@@ -299,12 +303,12 @@ const EDM = () => {
               />
             </div>
             <div className="bg-[#000000B2] space-y-4 rounded-2xl p-8 w-full">
-              <h2 className="text-[32px] text-green font-orbitron font-semibold">
+              <h2 className="text-[20px] md:text-[32px] text-green font-orbitron font-semibold">
                 25 AED (PER HEAD)
               </h2>
               <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
                 <div className="space-y-10 rounded-lg col-span-3 px-6 py-10 bg-[#000000B2] md:col-span-2">
-                  <h2 className="font-semibold text-white text-[22px] font-orbitron">
+                  <h2 className="font-semibold text-white text-[20px] md:text-[22px] font-orbitron">
                     NO. OF TICKETS
                   </h2>
                   <div>

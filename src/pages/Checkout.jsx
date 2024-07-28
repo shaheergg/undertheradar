@@ -35,27 +35,35 @@ const Checkout = () => {
       </div>
       <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-4 md:px-0">
         <div className="w-full py-3">
-          <h2 className="text-[40px] md:text-[70px] font-semibold text-green">
+          <h2 className="text-[30px] md:text-[70px] font-semibold text-green">
             CHECKOUT
           </h2>
         </div>
         <div className="w-full p-2 border-2 bg-black/40 border-green rounded-xl">
           <div className="flex items-center justify-center gap-4 p-2">
             <div>
-              <img className="w-28 h-28" src={visaSVG} alt="" />
+              <img className="w-20 h-20 md:w-28 md:h-28" src={visaSVG} alt="" />
             </div>
             <div>
-              <img className="w-28 h-28" src={applePaySVG} alt="" />
+              <img
+                className="w-20 h-20 md:w-28 md:h-28"
+                src={applePaySVG}
+                alt=""
+              />
             </div>
             <div>
-              <img className="w-28 h-28" src={mastercardSVG} alt="" />
+              <img
+                className="w-20 h-20 md:w-28 md:h-28"
+                src={mastercardSVG}
+                alt=""
+              />
             </div>
           </div>
           <div className="px-6 py-2 ">
-            <form className="space-y-6">
-              <div className="flex flex-wrap items-center gap-12">
+            <form className="space-y-4 md:space-y-6">
+              <div className="flex flex-wrap items-center gap-4 md:gap-12">
                 <label
-                  className="text-[27px] text-green font-semibold"
+                  className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="name"
                 >
                   Name
@@ -68,7 +76,7 @@ const Checkout = () => {
               </div>
               <div className="flex flex-wrap items-center gap-12">
                 <label
-                  className="text-[27px] text-green font-semibold"
+                  className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="card"
                 >
                   Card Number
@@ -81,7 +89,7 @@ const Checkout = () => {
               </div>
               <div className="flex flex-wrap items-center gap-12">
                 <label
-                  className="text-[27px] text-green font-semibold"
+                  className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="expiry"
                 >
                   Expiry Date
@@ -94,7 +102,7 @@ const Checkout = () => {
               </div>
               <div className="flex flex-wrap items-center gap-12">
                 <label
-                  className="text-[27px] text-green font-semibold"
+                  className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="cvv"
                 >
                   CVV Number
@@ -106,7 +114,7 @@ const Checkout = () => {
                 />
               </div>
               <div className="flex items-center justify-end w-full">
-                <button className="text-[27px] w-full md:w-auto px-4 py-2 border-2 bg-accent text-green border-green rounded-xl">
+                <button className="text-[20px] md:text-[27px] w-full md:w-auto px-4 py-2 border-2 bg-accent text-green border-green rounded-xl">
                   Done
                 </button>
               </div>

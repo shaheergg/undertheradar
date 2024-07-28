@@ -16,15 +16,15 @@ const Home = () => {
       >
         <div className="flex flex-col justify-center h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[50px] md:text-[70px]leading-[70.7px] text-white">
+            <h2 className="text-[30px] md:text-[70px] md:leading-[70.7px] text-white">
               About
             </h2>
-            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-green">
+            <h3 className="text-[30px] md:text-[70px]  md:leading-[70.7px] text-green">
               UNDER THE RADAR
             </h3>
           </div>
           <div>
-            <p className="text-[24px] font-semibold z-20 text-white leading-[34px]">
+            <p className="text-[18px] font-semibold z-20 text-white md:leading-[34px]">
               Under The Radar is not just an event company; it's a movement, a
               cultural phenomenon that thrives on the pulse of the underground
               scene. Born from a passion for diverse musical genres and a
@@ -100,10 +100,10 @@ const Home = () => {
       <div className="font-orbitron md:px-0 z-50 px-4 relative py-10 flex items-center justify-center min-h-[100vh] bg-3">
         <div className="flex flex-col justify-center w-full h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[50px] md:text-[70px] leading-[70.7px] text-white">
+            <h2 className="text-[30px] md:text-[70px] leading-[70.7px] text-white">
               Events
             </h2>
-            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-green">
+            <h3 className="text-[30px] md:text-[70px]  leading-[70.7px] text-green">
               UNDER THE RADAR
             </h3>
           </div>
@@ -121,7 +121,11 @@ const Home = () => {
                     }`}
                     className="transition-all border-2 border-transparent rounded-2xl hover:border-green ring-transparent ring-2 hover:ring-accent"
                   >
-                    <img className="h-[343px] w-[343px]" src={item} alt="" />
+                    <img
+                      className="md:h-[343px] h-[250px] w-full md:w-[343px]"
+                      src={item}
+                      alt=""
+                    />
                   </Link>
                 );
               })}
@@ -129,15 +133,22 @@ const Home = () => {
             <div className="grid-cols-1 space-y-5">
               <div className="h-64"></div>
               <div className="flex flex-col items-center p-8 font-semibold border-2 rounded-md border-accent ring-2 ring-green">
-                <img className="-mt-80" src={ticket} alt="" />
+                <img
+                  className="w-full md:h-auto h-[300px] -mt-80"
+                  src={ticket}
+                  alt=""
+                />
                 <div>
-                  <h2 className="text-[40px] font-bold text-green">
+                  <h2 className="text-[25px] md:text-[40px]  font-bold text-green">
                     TICKETS ONLY
                   </h2>
-                  <p className="text-white text-[30px]">
-                    AED <span className="text-[100px] text-accent">25</span>
+                  <p className="text-white md:text-[30px] text-[20px]">
+                    AED{" "}
+                    <span className="md:text-[100px] text-[50px] text-accent">
+                      25
+                    </span>
                   </p>
-                  <div className="text-[24px] text-white">
+                  <div className="text-[18px] md:text-[24px] text-white">
                     <h2 className="font-semibold">THE EXPERIENCE:</h2>
                     <p className="font-medium">
                       We customize your experience by offering you the chance to
@@ -231,10 +242,10 @@ const Home = () => {
       >
         <div className="z-50 flex flex-col justify-center w-full h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
-            <h2 className="text-[50px] md:text-[70px] leading-[70.7px] text-white">
+            <h2 className="text-[30px] md:text-[70px] leading-[70.7px] text-white">
               Contact
             </h2>
-            <h3 className="text-[50px] md:text-[70px]  leading-[70.7px] text-accent">
+            <h3 className="text-[30px] md:text-[70px]  leading-[70.7px] text-accent">
               UNDER THE RADAR
             </h3>
           </div>
@@ -306,9 +317,13 @@ const Home = () => {
             </div>
             <div className="col-span-5">
               <div className="p-6 space-y-4 text-white border-2 rounded-md border-green ">
-                <h2 className="text-[30px] font-semibold">DETAILS</h2>
-                <p className="text-[20px]">+971 54 4831909</p>
-                <p className="text-[20px]">undertheradar.dxb@gmail.com</p>
+                <h2 className="text-[20px] md:text-[30px] font-semibold">
+                  DETAILS
+                </h2>
+                <p className="md:text-[20px] text-[16px]">+971 54 4831909</p>
+                <p className="md:text-[20px] text-[16px]">
+                  undertheradar.dxb@gmail.com
+                </p>
               </div>
             </div>
           </div>
