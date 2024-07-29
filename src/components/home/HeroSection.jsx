@@ -8,19 +8,19 @@ import MobileNav from "./MobileNav";
 import CrossSVG from "../../assets/svgs/cross.svg";
 const HeroSection = () => {
   return (
-    <div id="events" className="relative min-h-[120vh] hero-bg">
-      <div className="absolute top-0 left-0">
+    <div id="events" className="relative md:min-h-[100vh] min-h-[50vh] hero-bg">
+      <div className="absolute hidden md:block top-0 left-0">
         <img className="animate-pulse" src={StarSVG} alt="" />
       </div>
       <Navbar />
       <MobileNav />
-      <div className="flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
+      <div className="flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-8 md:py-20 mx-auto md:flex-row justify-center md:px-0">
         <div>
           <h2 className="max-w-sm md:leading-[70.7px] text-center md:text-left text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
             UNDER THE <span className="text-accent">RADAR</span>
-            <span className="text-[30px] pl-36 block pb-4">Events</span>
+            <span className="text-[30px]  md:pl-36 block pb-4">Events</span>
           </h2>
-          <div className="flex flex-col items-center justify-center gap-4 p-2 md:items-start">
+          <div className="flex flex-col items-center justify-center gap-4 px-2 py-5 md:items-start">
             <svg
               width="17"
               height="168"
@@ -58,7 +58,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center flex-1 md:justify-end">
+        <div className="md:flex items-center hidden justify-center flex-1 md:justify-end">
           <img className="w-auto h-auto" src={HeroSVG} alt="" />
         </div>
       </div>

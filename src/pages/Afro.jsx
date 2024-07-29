@@ -56,7 +56,7 @@ const Afro = () => {
   return (
     <div>
       <div className="relative min-h-[100vh] afro-bg">
-        <div className="absolute top-0 left-0">
+        <div className="absolute hidden md:block top-0 left-0">
           <img className="animate-pulse" src={StarSVG} alt="" />
         </div>
         <div className="flex items-center justify-end p-4">
@@ -88,13 +88,15 @@ const Afro = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0">
+        <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-10 md:py-20 mx-auto md:flex-row justify- md:px-0">
           <div>
             <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
               UNDER THE <span className="text-[#FFD304]">RADAR</span>
-              <span className="block text-right text-[#FFD304]">AFRO</span>
+              <span className="block text-center md:text-right text-[#FFD304]">
+                AFRO
+              </span>
             </h2>
-            <div className="flex flex-col items-center justify-center gap-4 p-2 pt-4 text-center">
+            <div className="flex flex-col items-center justify-center gap-4 p-2 pt-8 text-center">
               <div>
                 <svg
                   width="17"

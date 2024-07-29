@@ -34,9 +34,9 @@ const Purchased = () => {
           />
         </svg>
       </div>
-      <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-20 md:px-0">
+      <section className="z-50 w-full max-w-6xl px-2 py-8 mx-auto space-y-10 md:space-y-20 md:px-0">
         <div className="font-semibold">
-          <h2 className="text-[30px] text-center md:text-left py-10 md:py-0 md:text-[70px] md:leading-[70.7px] text-white">
+          <h2 className="text-[30px] text-center md:text-left pt-8 pb-4 md:py-10 md:text-[70px] md:leading-[70.7px] text-white">
             THANK YOU FOR
           </h2>
           <h3 className="text-[30px] md:text-[70px] text-center md:text-left  leading-[70.7px] text-green">

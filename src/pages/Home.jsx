@@ -12,7 +12,7 @@ const Home = () => {
       <HeroSection />
       <div
         id="about"
-        className="font-orbitron md:px-0 px-4 z-50 relative py-10 flex items-center justify-center min-h-[100vh] dj-bg"
+        className="font-orbitron md:px-0 px-4 z-50 relative md:py-10 py-5 flex items-center justify-center min-h-[100vh] dj-bg"
       >
         <div className="flex flex-col justify-center h-full max-w-6xl gap-10 mx-auto">
           <div className="font-semibold">
