@@ -59,8 +59,8 @@ const Checkout = () => {
               />
             </div>
           </div>
-          <div className="px-6 py-2 ">
-            <form className="space-y-4 md:space-y-6">
+          <div className="px-6 py-2">
+            <form className="space-y-4">
               <div className="flex flex-wrap items-center gap-4 md:gap-12">
                 <label
                   className="text-[20px] md:text-[27px] text-green font-semibold"
@@ -74,7 +74,7 @@ const Checkout = () => {
                   className="px-4 py-2 font-semibold text-[27px] bg-black border-2 outline-none w-full md:w-[60%] rounded-xl border-green text-green"
                 />
               </div>
-              <div className="flex flex-wrap items-center gap-12">
+              <div className="flex flex-wrap items-center gap-4">
                 <label
                   className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="card"
@@ -87,7 +87,7 @@ const Checkout = () => {
                   className="px-4 py-2 font-semibold text-[27px] bg-black border-2 outline-none w-full md:w-[60%] rounded-xl border-green text-green"
                 />
               </div>
-              <div className="flex flex-wrap items-center gap-12">
+              <div className="flex flex-wrap items-center gap-4">
                 <label
                   className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="expiry"
@@ -100,7 +100,7 @@ const Checkout = () => {
                   className="px-4 py-2 font-semibold text-[27px] w-full md:w-fit bg-black border-2 outline-none rounded-xl border-green text-green"
                 />
               </div>
-              <div className="flex flex-wrap items-center gap-12">
+              <div className="flex flex-wrap items-center gap-4">
                 <label
                   className="text-[20px] md:text-[27px] text-green font-semibold"
                   htmlFor="cvv"

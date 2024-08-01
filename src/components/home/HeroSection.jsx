@@ -8,19 +8,24 @@ import MobileNav from "./MobileNav";
 import CrossSVG from "../../assets/svgs/cross.svg";
 const HeroSection = () => {
   return (
-    <div id="events" className="relative md:min-h-[100vh] min-h-[50vh] hero-bg">
-      <div className="absolute hidden md:block top-0 left-0">
+    <div
+      id="events"
+      className="relative md:min-h-[100vh] z-50 min-h-[50vh] hero-bg"
+    >
+      <div className="absolute top-0 left-0 z-50 hidden md:block">
         <img className="animate-pulse" src={StarSVG} alt="" />
       </div>
       <Navbar />
       <MobileNav />
-      <div className="flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-8 md:py-20 mx-auto md:flex-row justify-center md:px-0">
-        <div>
+      <div className="z-50 flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-8 mx-auto md:py-20 md:flex-row md:px-0">
+        <div className="z-50">
           <h2 className="max-w-sm md:leading-[70.7px] text-center md:text-left text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
             UNDER THE <span className="text-accent">RADAR</span>
-            <span className="text-[30px]  md:pl-36 block pb-4">Events</span>
+            <span className="text-[30px]  text-left md:pl-36 block pb-4">
+              Events
+            </span>
           </h2>
-          <div className="flex flex-col items-center justify-center gap-4 px-2 py-5 md:items-start">
+          <div className="z-50 flex flex-col justify-center gap-4 px-2 py-5 md:items-center">
             <svg
               width="17"
               height="168"
@@ -34,7 +39,7 @@ const HeroSection = () => {
                 fill="#30F4E2"
               />
             </svg>
-            <div className="flex items-start">
+            <div className="z-50 flex items-start">
               <a
                 href="#about"
                 className="p-4 bg-transparent border-2 rounded hover:text-black text-green hover:bg-green border-green"
@@ -58,11 +63,11 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex items-center hidden justify-center flex-1 md:justify-end">
+        <div className="items-center justify-center flex-1 hidden md:flex md:justify-end">
           <img className="w-auto h-auto" src={HeroSVG} alt="" />
         </div>
       </div>
-      <div className="absolute pt-10 bottom-5 right-64">
+      <div className="absolute hidden pt-10 md:block bottom-5 right-64">
         <img src={CrossSVG} className="h-16" alt="" />
       </div>
       <div className="absolute left-0 top-1/2">

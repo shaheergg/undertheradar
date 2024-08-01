@@ -56,7 +56,7 @@ const Afro = () => {
   return (
     <div>
       <div className="relative min-h-[100vh] afro-bg">
-        <div className="absolute hidden md:block top-0 left-0">
+        <div className="absolute top-0 left-0 hidden md:block">
           <img className="animate-pulse" src={StarSVG} alt="" />
         </div>
         <div className="flex items-center justify-end p-4">
@@ -88,15 +88,13 @@ const Afro = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-10 md:py-20 mx-auto md:flex-row justify- md:px-0">
+        <div className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-10 mx-auto md:py-20 md:flex-row justify- md:px-0">
           <div>
             <h2 className="max-w-sm leading-[70.7px] text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
               UNDER THE <span className="text-[#FFD304]">RADAR</span>
-              <span className="block text-center md:text-right text-[#FFD304]">
-                AFRO
-              </span>
+              <span className="block md:text-right text-[#FFD304]">AFRO</span>
             </h2>
-            <div className="flex flex-col items-center justify-center gap-4 p-2 pt-8 text-center">
+            <div className="flex flex-col justify-center gap-4 p-2 pt-8 text-center md:items-center">
               <div>
                 <svg
                   width="17"
@@ -182,9 +180,9 @@ const Afro = () => {
             </h2>
             <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[100vh] overflow-y-scroll">
               <div className="flex flex-wrap items-center justify-between">
-                <div className="flex flex-col items-center gap-4 text-center border rounded-2xl border-green">
+                <div className="flex flex-col items-center gap-4 px-4 py-4 text-center border rounded-2xl border-green">
                   <img
-                    className="w-auto h-auto md:h-[200px]"
+                    className="w-auto h-[150px] md:h-[150px]"
                     src={Drink}
                     alt=""
                   />

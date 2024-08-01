@@ -122,7 +122,7 @@ const Home = () => {
                     className="transition-all border-2 border-transparent rounded-2xl hover:border-green ring-transparent ring-2 hover:ring-accent"
                   >
                     <img
-                      className="md:h-[343px] h-[250px] w-full md:w-[343px]"
+                      className="md:h-[343px] object-cover h-[250px] w-full md:w-[343px]"
                       src={item}
                       alt=""
                     />
