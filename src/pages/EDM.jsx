@@ -92,14 +92,14 @@ const EDM = () => {
               UNDER THE <span className="text-[#FF0000]">RADAR</span>
               <span className="block md:text-right text-[#FF0000]">EDM</span>
             </h2>
-            <div className="flex flex-col justify-center gap-4 p-2 pt-8 text-center md:items-center">
+            <div className="flex flex-col justify-center gap-4 p-2 pt-16 text-center md:items-center">
               <div>
                 <svg
                   width="17"
                   height="168"
                   viewBox="0 0 17 168"
                   fill="none"
-                  className="animate-bounce"
+                  className="ml-5 animate-bounce"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -191,12 +191,12 @@ const EDM = () => {
             <h2 className="font-orbitron text-[#FF0000] text-[30px] md:text-[55px] font-bold max-w-3xl">
               PICK YOUR PREFERED ARTISTS
             </h2>
-            <div className="px-6 py-6 h-[90vh] flex justify-between flex-wrap gap-6 overflow-y-scroll bg-[#00000099] rounded-xl w-full">
+            <div className="px-6 py-6 h-[70vh] grid grid-cols-2 md:grid-cols-3 gap-6 overflow-y-scroll bg-[#00000099] rounded-xl w-full">
               {artists.map((artist) => {
                 return (
                   <div className="flex flex-col items-center gap-4 text-center">
                     <img src={artist.img} alt="" />
-                    <span className="uppercase text-[#FF0000] text-[23.5px] font-orbitron font-semibold">
+                    <span className="uppercase text-[#FF0000] text-[18px] md:text-[23.5px] font-orbitron font-semibold">
                       {artist.name}
                     </span>
                   </div>
@@ -269,8 +269,8 @@ const EDM = () => {
             <h2 className="text-[30px] md:text-[70px] text-[#FF0000] font-semibold font-orbitron">
               PRE ORDER DRINKS
             </h2>
-            <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[100vh] overflow-y-scroll">
-              <div className="flex flex-wrap items-center justify-between">
+            <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[70vh] overflow-y-scroll">
+              <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
                 <div className="flex flex-col items-center gap-4 px-4 py-4 text-center border rounded-2xl border-green">
                   <img
                     className="w-auto h-[150px] md:h-auto"

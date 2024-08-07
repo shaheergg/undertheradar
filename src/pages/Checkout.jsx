@@ -3,6 +3,7 @@ import StarSVG from "../assets/svgs/star.svg";
 import visaSVG from "../assets/svgs/visa.svg";
 import applePaySVG from "../assets/svgs/applePay.svg";
 import mastercardSVG from "../assets/svgs/mastercard.svg";
+import CreditCardInput from "../components/CreditCardInput";
 const Checkout = () => {
   return (
     <div className="overflow-hidden font-orbitron md:px-0 px-4 z-40 relative flex items-center py-10 min-h-[100vh] checkout-bg">
@@ -81,11 +82,7 @@ const Checkout = () => {
                 >
                   Card Number
                 </label>
-                <input
-                  id="card"
-                  type="number"
-                  className="px-4 py-2 font-semibold text-[27px] bg-black border-2 outline-none w-full md:w-[60%] rounded-xl border-green text-green"
-                />
+                <CreditCardInput />
               </div>
               <div className="flex flex-wrap items-center gap-4">
                 <label

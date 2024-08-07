@@ -94,13 +94,13 @@ const Afro = () => {
               UNDER THE <span className="text-[#FFD304]">RADAR</span>
               <span className="block md:text-right text-[#FFD304]">AFRO</span>
             </h2>
-            <div className="flex flex-col justify-center gap-4 p-2 pt-8 text-center md:items-center">
+            <div className="flex flex-col justify-center gap-4 p-2 pt-16 text-center md:items-center">
               <div>
                 <svg
                   width="17"
                   height="168"
                   viewBox="0 0 17 168"
-                  className="animate-bounce"
+                  className="ml-5 animate-bounce"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -139,8 +139,8 @@ const Afro = () => {
       </div>
 
       <div className="relative min-h-[100vh] afro-bg-1">
-        <div className="absolute z-50 -top-16 right-5">
-          <img src={Balls} alt="" />
+        <div className="absolute z-50 -top-8 right-5">
+          <img className="h-12 md:h-auto" src={Balls} alt="" />
         </div>
         <div className="absolute bottom-0 left-0 z-50">
           <img src={Checks} alt="" />
@@ -150,11 +150,11 @@ const Afro = () => {
             <h2 className="font-orbitron text-[#FFD304] text-[30px] md:text-[55px] font-semibold max-w-3xl">
               PICK YOUR PREFERED ARTISTS
             </h2>
-            <div className="px-6 py-6 h-[90vh] flex justify-between flex-wrap gap-6 overflow-y-scroll bg-[#00000082] rounded-xl w-full">
+            <div className="px-6 py-6 h-[70vh] grid grid-cols-2 md:grid-cols-3 gap-6 overflow-y-scroll bg-[#00000082] rounded-xl w-full">
               {artists.map((artist) => {
                 return (
-                  <div className="flex flex-col items-center gap-4 text-center">
-                    <img src={artist.img} alt="" />
+                  <div className="flex flex-col items-center w-auto h-auto gap-4 text-center">
+                    <img src={artist.img} className="w-full h-full" alt="" />
                     <span className="uppercase text-[#FFD304] text-[23.5px] font-orbitron font-semibold">
                       {artist.name}
                     </span>
@@ -167,8 +167,8 @@ const Afro = () => {
       </div>
 
       <div className="relative min-h-[100vh] afro-bg-2">
-        <div className="absolute z-50 w-48 h-48 -top-16 right-5">
-          <img src={Shine} alt="" />
+        <div className="absolute z-50 hidden w-48 h-48 -top-16 right-2 md:block">
+          <img className="h-20 md:h-auto" src={Shine} alt="" />
         </div>
         <div className="absolute z-50 hidden -bottom-16 right-56 md:block">
           <img src={AfroMain} alt="" />
@@ -178,8 +178,8 @@ const Afro = () => {
             <h2 className="text-[30px] py-2 md:text-[70px] text-[#FFD304] font-semibold font-orbitron">
               PRE ORDER DRINKS
             </h2>
-            <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[100vh] overflow-y-scroll">
-              <div className="flex flex-wrap items-center justify-between">
+            <div className="px-4 py-6 bg-[#000000B2] rounded-xl h-[70vh] overflow-y-scroll">
+              <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
                 <div className="flex flex-col items-center gap-4 px-4 py-4 text-center border rounded-2xl border-green">
                   <img
                     className="w-auto h-[150px] md:h-[150px]"

@@ -18,20 +18,20 @@ const HeroSection = () => {
       <Navbar />
       <MobileNav />
       <div className="z-50 flex flex-col flex-wrap items-center justify-center max-w-6xl px-4 py-8 mx-auto md:py-20 md:flex-row md:px-0">
-        <div className="z-50">
+        <div className="z-40">
           <h2 className="max-w-sm md:leading-[70.7px] text-center md:text-left text-white font-semibold flex-1 text-[30px] md:text-[70px] font-orbitron">
             UNDER THE <span className="text-accent">RADAR</span>
             <span className="text-[30px]  text-left md:pl-36 block pb-4">
               Events
             </span>
           </h2>
-          <div className="z-50 flex flex-col justify-center gap-4 px-2 py-5 md:items-center">
+          <div className="z-50 flex flex-col justify-center gap-4 px-2 py-12 md:items-center">
             <svg
               width="17"
               height="168"
               viewBox="0 0 17 168"
               fill="none"
-              className="md:ml-5 animate-bounce"
+              className="ml-5 animate-bounce"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

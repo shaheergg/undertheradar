@@ -94,14 +94,14 @@ const HipHop = () => {
                 HIP HOP
               </span>
             </h2>
-            <div className="flex flex-col justify-center gap-4 px-2 pt-8 text-center md:items-center">
+            <div className="flex flex-col justify-center gap-4 px-2 pt-16 text-center md:items-center">
               <div>
                 <svg
                   width="17"
                   height="168"
                   viewBox="0 0 17 168"
                   fill="none"
-                  className="animate-bounce"
+                  className="ml-5 animate-bounce"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -138,7 +138,7 @@ const HipHop = () => {
         </div>
       </div>
 
-      <div className="relative min-h-[100vh] z-50 hiphop-bg-1">
+      <div className="relative min-h-[100vh] z-50 hiphop-bg-2">
         <div className="absolute z-50 hidden md:block -top-56 right-5">
           <img src={Balls} alt="" />
         </div>
@@ -180,15 +180,15 @@ const HipHop = () => {
           className="flex flex-col flex-wrap items-center justify-start max-w-6xl px-4 py-20 mx-auto md:flex-row justify- md:px-0"
         >
           <div className="z-50 w-full space-y-4">
-            <h2 className="font-orbitron text-[#FF7A00] text-[30px] md:text-[55px] font-semibold max-w-6xl">
+            <h2 className="font-orbitron text-[#FF7A00] text-[30px] md:text-[55px] font-semibold">
               PICK YOUR PREFERRED ARTISTS
             </h2>
-            <div className="px-6 py-6 h-[90vh] flex justify-between flex-wrap gap-6 overflow-y-scroll bg-[#000000A1] rounded-xl w-full">
+            <div className="px-6 py-6 h-[70vh] grid grid-cols-2 md:grid-cols-3 gap-6 overflow-y-scroll bg-[#000000A1] rounded-xl w-full">
               {artists.map((artist) => {
                 return (
                   <div className="flex flex-col items-center gap-4 text-center">
                     <img src={artist.img} alt="" />
-                    <span className="uppercase text-[#FF7A00] text-[23.5px] font-orbitron font-semibold">
+                    <span className="uppercase text-[#FF7A00] text-[18px] md:text-[23.5px] font-orbitron font-semibold">
                       {artist.name}
                     </span>
                   </div>
@@ -199,7 +199,7 @@ const HipHop = () => {
         </div>
       </div>
 
-      <div className="relative min-h-[100vh] hiphop-bg-2">
+      <div className="relative min-h-[100vh] hiphop-bg-1">
         <div className="absolute md:block hidden z-[1000] -top-20 right-5">
           <svg
             width="179"
@@ -223,10 +223,10 @@ const HipHop = () => {
             <h2 className="text-[30px] md:text-[70px] text-[#FF7A00] font-semibold font-orbitron">
               PRE ORDER DRINKS
             </h2>
-            <div className="px-4 py-6 bg-[#000000D1] rounded-xl h-[100vh] overflow-y-scroll">
-              <div className="flex flex-wrap items-center justify-between">
+            <div className="px-4 py-6 bg-[#000000D1] rounded-xl h-[70vh] overflow-y-scroll">
+              <div className="grid grid-cols-2 md:grid-cols-3">
                 <div className="flex flex-col items-center gap-4 text-center border rounded-2xl border-green">
-                  <img className="w-auto " src={Drink} alt="" />
+                  <img className="w-auto h-[150px]" src={Drink} alt="" />
                   <h2 className="font-orbitron font-semibold text-[#FF7A00] text-[30px]">
                     BEER
                   </h2>

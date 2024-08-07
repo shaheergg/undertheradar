@@ -22,7 +22,7 @@ html {
   background: #555;
 }
 .hero-bg {
-  background-image: url("/src/assets/hero.jpg");
+  background-image: url("/src/assets/image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ html {
 }
 
 .bg-3 {
-  background-image: url("/src/assets/bg-3.jpg");
+  background-image: url("/src/assets/matrix-purple.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@ html {
 }
 
 .afro-bg {
-  background-image: url("/src/assets/afro-bg.jpg");
+  background-image: url("/src/assets/afro-bg-new.jpg");
   background-size: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ html {
 }
 
 .hiphop-bg {
-  background-image: url("/src/assets/hiphop-bg.jpg");
+  background-image: url("/src/assets/hiphop-bg-new.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .hiphop-bg-1 {
-  background-image: url("/src/assets/hiphop-bg-1.jpg");
+  background-image: url("/src/assets/hiphop-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

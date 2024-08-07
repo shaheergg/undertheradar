@@ -108,7 +108,7 @@ const Home = () => {
             </h3>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="flex flex-col items-center col-span-1 gap-4 md:items-start">
+            <div className="flex flex-col items-start items-center col-span-1 gap-4">
               {[afro, hiphop, edm].map((item) => {
                 return (
                   <Link
@@ -119,9 +119,12 @@ const Home = () => {
                         ? "/hiphop"
                         : "/edm"
                     }`}
-                    className="transition-all border-2 border-transparent rounded-2xl hover:border-green ring-transparent ring-2 hover:ring-accent"
+                    className="items-start transition-all border-2 border-transparent rounded-2xl hover:border-green ring-transparent ring-2 hover:ring-accent"
                   >
                     <img
+                      style={{
+                        objectFit: "cover",
+                      }}
                       className="md:h-[343px] object-cover h-[250px] w-full md:w-[343px]"
                       src={item}
                       alt=""
@@ -130,7 +133,7 @@ const Home = () => {
                 );
               })}
             </div>
-            <div className="grid-cols-1 space-y-5">
+            <div className="grid-cols-1 pt-16 space-y-5">
               <div className="h-64"></div>
               <div className="flex flex-col items-center p-8 font-semibold border-2 rounded-md border-accent ring-2 ring-green">
                 <img

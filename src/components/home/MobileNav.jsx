@@ -50,11 +50,16 @@ export default function MobileNav() {
           </button>
         </div>
       </div>
-      <div className="absolute hidden rounded-md min-h-fit group-hover:block w-80 top-28 bg-green">
+      <div
+        style={{
+          zIndex: 9999999,
+        }}
+        className="absolute hidden rounded-md min-h-fit group-hover:block w-80 top-20 bg-green"
+      >
         {navigation.map((item) => {
           return (
             <>
-              <div>
+              <div className="z-50">
                 <a
                   href={item.to}
                   className="block px-4 py-2 text-black hover:underline font-orbitron"
